@@ -13,4 +13,5 @@ class Game
     private:
         Player player;
         Tile tile;
+        Camera2D camera;
 };

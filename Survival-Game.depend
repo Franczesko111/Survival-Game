@@ -3,26 +3,27 @@
 	<raylib.h>
 	"game.h"
 
-1707061703 c:\users\hp\documents\raylib official games\survival-game\player.h
+1707073186 c:\users\hp\documents\raylib official games\survival-game\player.h
 	<raylib.h>
 
-1707061724 source:c:\users\hp\documents\raylib official games\survival-game\player.cpp
+1707073306 source:c:\users\hp\documents\raylib official games\survival-game\player.cpp
 	<raylib.h>
 	"player.h"
 
-1707068324 c:\users\hp\documents\raylib official games\survival-game\game.h
+1707073073 c:\users\hp\documents\raylib official games\survival-game\game.h
 	<raylib.h>
 	"player.h"
 	"tiles.h"
 
-1707068706 source:c:\users\hp\documents\raylib official games\survival-game\game.cpp
+1707073341 source:c:\users\hp\documents\raylib official games\survival-game\game.cpp
 	<raylib.h>
+	<cmath>
 	"game.h"
 
 1707070164 c:\users\hp\documents\raylib official games\survival-game\tiles.h
 	<raylib.h>
 
-1707069914 source:c:\users\hp\documents\raylib official games\survival-game\tiles.cpp
+1707071188 source:c:\users\hp\documents\raylib official games\survival-game\tiles.cpp
 	<raylib.h>
 	"tiles.h"
 

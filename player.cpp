@@ -6,12 +6,11 @@
 
 Player::Player()
 {
-    x = GetScreenWidth() / 2 - PLAYER_WIDTH / 2;
-    y = GetScreenHeight() / 2 - PLAYER_HEIGHT / 2;
-    texture = LoadTexture("Images/player.png");
     speed = 3;
     scale = 3;
-
+    x = GetScreenWidth() / 2;
+    y = GetScreenHeight() / 2;
+    texture = LoadTexture("Images/player.png");
     animationTimer = animationFrame = 0;
 }
 
@@ -54,4 +53,9 @@ void Player::Animation(float timeleft, int startframe, int endframe)
         animationFrame++;
         if(animationFrame == endframe) animationFrame = startframe;
     }
+}
+
+Vector2 Player::GetPlayerPosition()
+{
+    return Vector2{x, y};
 }

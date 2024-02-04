@@ -9,6 +9,8 @@ class Player
         void Draw();
         void Update();
 
+        Vector2 GetPlayerPosition();
+
     private:
         Texture2D texture;
         Rectangle source;

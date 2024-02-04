@@ -1,20 +1,28 @@
 # depslib dependency file v1.0
-1707045295 source:c:\users\hp\documents\raylib official games\survival-game\main.cpp
+1707048645 source:c:\users\hp\documents\raylib official games\survival-game\main.cpp
 	<raylib.h>
 	"game.h"
 
-1707046310 c:\users\hp\documents\raylib official games\survival-game\player.h
+1707061703 c:\users\hp\documents\raylib official games\survival-game\player.h
 	<raylib.h>
 
-1707044790 source:c:\users\hp\documents\raylib official games\survival-game\player.cpp
-	<raylib.h>
-	"player.h"
-
-1707045227 c:\users\hp\documents\raylib official games\survival-game\game.h
+1707061724 source:c:\users\hp\documents\raylib official games\survival-game\player.cpp
 	<raylib.h>
 	"player.h"
 
-1707045241 source:c:\users\hp\documents\raylib official games\survival-game\game.cpp
+1707063301 c:\users\hp\documents\raylib official games\survival-game\game.h
+	<raylib.h>
+	"player.h"
+	"tiles.h"
+
+1707063313 source:c:\users\hp\documents\raylib official games\survival-game\game.cpp
 	<raylib.h>
 	"game.h"
+
+1707063655 c:\users\hp\documents\raylib official games\survival-game\tiles.h
+	<raylib.h>
+
+1707063557 source:c:\users\hp\documents\raylib official games\survival-game\tiles.cpp
+	<raylib.h>
+	"tiles.h"
 

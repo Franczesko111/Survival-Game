@@ -1,7 +1,5 @@
-#include <iostream>
 #include <raylib.h>
 #include "player.h"
-using namespace std;
 
 #define PLAYER_WIDTH 8
 #define PLAYER_HEIGHT 12

@@ -10,6 +10,12 @@ class Player
         void Update();
 
     private:
-        float x, y, width, height;
-        int speed;
+        Texture2D texture;
+        Rectangle source;
+        Rectangle dest;
+        Vector2 origin;
+        float x, y, rotation, animationTimer;
+        int speed, scale, input_x, input_y, animationFrame;
+
+        void Animation(float timeleft, int startframe, int endframe);
 };

@@ -1,8 +1,19 @@
-#include <iostream>
-using namespace std;
+#include <raylib.h>
 
 int main()
 {
-    cout << "Hello, World!" << endl;
+    InitWindow(512, 480, "Survival Game Test");
+    SetTargetFPS(60);
+
+    while(WindowShouldClose() == false)
+    {
+        BeginDrawing();
+
+        ClearBackground(LIGHTGRAY);
+
+        EndDrawing();
+    }
+
+    CloseWindow();
     return 0;
 }

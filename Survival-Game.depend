@@ -6,7 +6,7 @@
 1707073186 c:\users\hp\documents\raylib official games\survival-game\player.h
 	<raylib.h>
 
-1707073306 source:c:\users\hp\documents\raylib official games\survival-game\player.cpp
+1707073423 source:c:\users\hp\documents\raylib official games\survival-game\player.cpp
 	<raylib.h>
 	"player.h"
 
@@ -15,15 +15,17 @@
 	"player.h"
 	"tiles.h"
 
-1707073341 source:c:\users\hp\documents\raylib official games\survival-game\game.cpp
+1707074985 source:c:\users\hp\documents\raylib official games\survival-game\game.cpp
+	<iostream>
 	<raylib.h>
 	<cmath>
 	"game.h"
 
-1707070164 c:\users\hp\documents\raylib official games\survival-game\tiles.h
+1707074914 c:\users\hp\documents\raylib official games\survival-game\tiles.h
 	<raylib.h>
 
-1707071188 source:c:\users\hp\documents\raylib official games\survival-game\tiles.cpp
+1707074926 source:c:\users\hp\documents\raylib official games\survival-game\tiles.cpp
+	<iostream>
 	<raylib.h>
 	"tiles.h"
 

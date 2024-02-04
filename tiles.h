@@ -20,12 +20,13 @@ class Tile
         Tile();
         ~Tile();
         void Draw(int id);
+        void Update(int id, float camera);
         void AddTile(TileData data, int id);
         int GetTileSize();
 
     private:
         int scale;
         Texture2D texture;
-        TileData data[240];
-        Spritesheet spritesheet[240];
+        TileData data[380];
+        Spritesheet spritesheet[380];
 };

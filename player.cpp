@@ -34,7 +34,7 @@ void Player::Update()
     x += input_x * speed;
     y += input_y * speed;
 
-    source = Rectangle{animationFrame * PLAYER_WIDTH, 0, PLAYER_WIDTH, PLAYER_HEIGHT};
+    source = Rectangle{(float)animationFrame * PLAYER_WIDTH, 0, PLAYER_WIDTH, PLAYER_HEIGHT};
     dest = Rectangle{x, y, source.width * scale, source.height * scale};
     origin = Vector2{dest.width / 2, dest.height / 2};
     rotation = 0;
@@ -42,7 +42,7 @@ void Player::Update()
     if(input_x != 0 || input_y != 0){
             Animation(0.2, 1, 3);
     }else{
-            animationFrame = animationFrame = 0;
+            animationFrame = animationTimer = 0;
     }
 }
 

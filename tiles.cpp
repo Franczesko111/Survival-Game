@@ -1,32 +1,34 @@
 #include <raylib.h>
 #include "tiles.h"
 
-#define TILE_WIDTH 16
-#define TILE_HEIGHT 16
+#define TILE_SIZE 16
 
-Tiles::Tiles()
+Tile::Tile()
 {
     texture = LoadTexture("Images/tiles.png");
     scale = 2;
 }
 
-Tiles::~Tiles()
+Tile::~Tile()
 {
     UnloadTexture(texture);
 }
 
-void Tiles::Draw()
+void Tile::Draw(int id)
 {
-    DrawTexturePro(texture, source, dest, origin, rotation, WHITE);
+    DrawTexturePro(texture, spritesheet[id].source, spritesheet[id].dest, spritesheet[id].origin, 0, WHITE);
 }
 
-void Tiles::AddTile(float x, float y)
+void Tile::AddTile(TileData data, int id)
 {
-    this->x = x;
-    this->y = y;
+    this->data[id] = data;
 
-    source = Rectangle{0, 0, TILE_WIDTH, TILE_HEIGHT};
-    dest = Rectangle{x, y, source.width * scale, source.height * scale};
-    origin = Vector2{dest.width / 2, dest.height / 2};
-    rotation = 0;
+    spritesheet[id].source = Rectangle{0, 0, 16, 16};
+    spritesheet[id].dest = Rectangle{data.x, data.y, spritesheet[id].source.width * scale, spritesheet[id].source.height * scale};
+    spritesheet[id].origin = Vector2{spritesheet[id].dest.width / 2, spritesheet[id].dest.height / 2};
+}
+
+int Tile::GetTileSize()
+{
+   return TILE_SIZE * scale;
 }

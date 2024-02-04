@@ -12,5 +12,5 @@ class Game
 
     private:
         Player player;
-        Tiles tiles[240];
+        Tile tile;
 };

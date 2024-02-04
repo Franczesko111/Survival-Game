@@ -1,19 +1,31 @@
 #pragma once
 #include <raylib.h>
 
-class Tiles
+typedef struct TileData
+{
+    float x;
+    float y;
+} TileData;
+
+typedef struct Spritesheet
+{
+    Rectangle source;
+    Rectangle dest;
+    Vector2 origin;
+} Spritesheet;
+
+class Tile
 {
     public:
-        Tiles();
-        ~Tiles();
-        void Draw();
-        void AddTile(float x, float y);
+        Tile();
+        ~Tile();
+        void Draw(int id);
+        void AddTile(TileData data, int id);
+        int GetTileSize();
 
     private:
-        Texture2D texture;
-        Rectangle source;
-        Rectangle dest;
-        Vector2 origin;
-        float x, y, rotation;
         int scale;
+        Texture2D texture;
+        TileData data[240];
+        Spritesheet spritesheet[240];
 };

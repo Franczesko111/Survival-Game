@@ -9,7 +9,7 @@ Game::Game()
     {
         x = i%16 * 32 + 16;
         y = floor(i/16) * 32 + 16;
-        tile.AddTile(TileData{x, y}, i);
+        tile.AddTile(TileData{(float)x, (float)y}, i);
     }
 }
 
